@@ -1,0 +1,480 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    color: seashell;
+    text-align: center;
+    background-color: rgb(245, 255, 255);
+}
+
+.header .content {
+    display: inline-flex;
+    justify-content: center;
+    gap: 3.125rem;
+    align-items: center;
+    height: 5rem;
+    border-bottom: 1px solid grey;
+    text-align: center;
+    box-shadow: 0 3px rgb(141, 137, 137);
+    width: 100%;
+}
+
+.hea1, .hea2 {
+    flex-shrink: 2;
+}
+
+.hea2 {
+    display: flex;
+    gap: 2.25rem;
+}
+
+.hea1 ul, .hea2 ul {
+    align-items: center;
+    display: flex;
+    gap: 2.25rem;
+    list-style: none;
+}
+
+.header a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    color: rgba(61, 57, 57, 0.945);
+    font-weight: 400;
+}
+
+.header a:hover {
+    color: rgba(158, 28, 158, 0.877);
+}
+
+.header #button {
+    display: flex;
+    flex-wrap: nowrap;
+    border: 1px solid rgba(158, 28, 158, 0.877);
+    padding: 0.59375rem 0.9375rem 0.65625rem;
+    border-radius: 0.3125rem;
+    font-size: 0.3125rem;
+}
+
+#button a {
+    font-size: 0.9375rem;
+    color: rgba(61, 57, 57, 0.945);
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#button:hover, #button a:hover {
+    background-color: rgba(158, 28, 158, 0.877);
+    color: azure;
+    font-size: 1rem;
+}
+
+@media only screen and (max-width: 1104px) {
+   .header #button {
+    display: none;
+   } 
+}
+
+@media only screen and (max-width: 946px) {
+    .header .hea1 {
+        display: none;
+    }
+}
+
+
+.banner {
+    background-image: url('christopher-gower-m_HRfLhgABo-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: .9;
+    height: 48.75rem;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    text-align: start;
+    margin-bottom: 6.25rem;
+}
+
+.banner h1 {
+    color: rgb(126, 94, 94);
+    font-size: 6.25rem;
+    font-weight: 800;
+    line-height: 1.2;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    opacity: 1;
+    padding-top: 2.5rem;
+}
+
+.banner h4 {
+    color: rgb(0, 0, 0);
+    padding: 0.625rem 3.125rem;
+    letter-spacing: 1.5px;
+    opacity: 10;
+    font-size: 1.25rem;
+    font-weight: 600;
+    background-color: azure;
+    text-transform: lowercase;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+@media only screen and (max-width: 1104px) {
+    .banner h1 {
+        font-size: 4.25rem;
+    }
+}
+
+
+.mission {
+    padding-top: 1.25rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 25%;
+    margin-left: 4%;
+    height: auto;
+}
+
+.logo img {
+    float: left;
+    padding-right: 25%;
+} 
+
+.mission p, .mission h1 {
+    color: black;
+    padding-top: 1.875rem;
+    line-height: 2;
+    word-spacing: 2px;
+    text-align: left;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.parteners {
+    display: flex;
+    float: left;
+    gap: 0.625rem;
+    padding-top: 0.9375rem;
+    padding-left: 0;
+}
+
+.stats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    flex-wrap: wrap;
+    width: 40%;
+}
+
+.stats .box {
+    border: 1px solid azure;
+    width: 10rem;
+    height: 15.625rem;
+    box-shadow: 3px 3px 3px 3px grey;
+    border-radius: 10px;
+    padding: 1.25rem;
+    background-color: rgb(250, 237, 245);
+}
+
+.stats .box h2, .stats .box p {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin: 3% auto;
+    margin-top: 0.625rem;
+    font-size: 1.25rem;
+}
+
+.first {
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    width: 100%;
+}
+
+@media only screen and (max-width: 610px) {
+    .mission {
+        display: none;
+    }
+
+    .stats {
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: flex-start;
+    }
+}
+
+@media only screen and (max-width: 1542px) {
+    .first {
+        justify-content: space-between;
+        gap: 100px;
+    }
+}
+
+@media only screen and (max-width: 1109px) and (min-width: 611px) {
+    .stats {
+        display: none;
+    }
+}
+
+.second {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 6.25rem;
+    margin-top: 6.25rem;
+    margin-bottom: 5rem;
+}
+
+.rank {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.rank h1, .rank p {
+    color: black;
+    padding-left: 0.625rem;
+    line-height: 1.6;
+}
+
+.rank p {
+    font-size: 1.25rem;
+}
+
+.clutch {
+    display: flex;
+}
+
+.clutch img {
+    height: 12.5rem;
+    width: 100%;
+}
+
+.box_1 {
+    border-left: 1px solid rgba(240, 255, 255, 0.301);
+    padding: 1.5625rem;
+    box-shadow: 1px 1px 1px 1px grey;
+}
+
+@media only screen and (max-width: 1330px) {
+    .second {
+        flex-direction: column;
+    }
+    .rank {
+        align-items: center;
+    }
+    .clutch {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 488px) {
+    .clutch {
+        flex-wrap: nowrap;
+    }
+} 
+
+.third {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    border-top: 1px solid #4842a8;
+    margin-bottom: 5rem;
+}
+
+.title h4 {
+    color: black;
+    font-size: 45px;
+    line-height: 1.5;
+    letter-spacing: 1.5px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+}
+
+
+.third_content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.8rem;
+    width: 70%;
+    margin: 0 auto;
+    justify-content: center;
+    align-content: center;
+}
+
+
+.box_2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 25%;
+    height: 31.25rem;
+    box-shadow: 3px 3px 3px 3px grey;
+    border-radius: 10px;
+    padding: 1.25rem;
+}
+
+.box_2 h1, .box_2 p {
+    color: black;
+}
+
+.product_logo img {
+    height: 1.5625rem;
+    width: 1.5625rem;
+}
+
+.product_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    background: linear-gradient(to bottom,#4842a8 1%,#524bb8 100%);
+    max-width: 10.625rem;
+    height: 2.5rem;
+    border-radius: 5px;
+
+}
+
+.product_button h1 {
+    font-size: 1rem;
+}
+
+.product_button a {
+    text-decoration: none;
+    color: aliceblue;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+}
+
+.product_name {
+    display: flex;
+    gap: 0.625rem;
+}
+
+.product_logo {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.logo_name {
+    display: flex;
+    gap: 1.25rem;
+}
+
+@media only screen and (max-width: 1320px) {
+    .third_content {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 922px) {
+    .product_name h1, .logo_name p, .product_button h1 {
+        font-size: 100%;
+    }
+    .box_2 {
+        width: 50%;
+    }
+}
+
+.fourth {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    margin: 0 auto;
+    gap: 2.5rem;
+    text-align: left;
+    margin-bottom: 1.25rem;
+}
+
+.fourth img {
+    width: 4.375rem;
+    height: 4.375rem;
+}
+
+.fourth h5 {
+    color: black;
+    font-size: 1rem;
+    font-weight: 800;
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+}
+
+.fourth p {
+    color: black;
+    font-size: 0.9375rem;
+    line-height: 2;
+    word-spacing: 2px;
+    text-align: left;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.box_3 {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5625rem;
+    width: 25%;
+    height: 26rem;
+    box-shadow: 3px 3px 3px 3px grey;
+    border-radius: 0.625rem;
+    padding: 1.25rem;
+    text-align: left;
+}
+
+.model_name {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 0.9375rem;
+}
+
+.fourth_content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+    width: 100%;
+}
+
+@media only screen and (max-width: 1566px) {
+    .fourth p {
+        font-size: 100%;
+    }
+    .box_3 {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .fourth p {
+        font-size: x-small;
+    }
+}
+
+footer {
+    background-color: #212529;
+    margin-top: auto;
+    min-width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-top: 3.125rem;
+
+}
+
+footer h2 {
+    padding-left: 1.25rem;
+    font-size: small;
+    color: azure;
+}
